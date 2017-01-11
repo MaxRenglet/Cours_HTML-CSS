@@ -1,0 +1,60 @@
+/* Feuille de style */
+
+/* Dans #contenu, on reconnait le nom d'une div de la page HTML, contenu et le sigle "#", ce sigle correspond à la valeur id que l'on utilise dans l'HTML */
+#contenu {
+    
+    /* Width correspond à la largeur du rectange de la div */
+    width: 700px;
+    
+    /* Margin correspond au marge du rectange, une valeur auto permet de placer celui-ci au milieu de la page */
+    margin: auto;
+    
+}
+
+
+/* Contrairement à un id, une classe se note "." puis le nom de la classe. */
+.rouge {
+    
+    width: 700px;
+    
+    /* Height correspond à la hauteur du rectange de la div */
+    height: 70px;
+    
+    /* Background-color permet de colorer la div, ici en rouge. Les valeurs peuvent être en hexadécimal (par exemple : #FF0000) */
+    background-color: blue;
+    
+     /* Color permet de changer la couleur du texte, . Les valeurs peuvent être aussi en hexadécimal (par exemple : #FF0000) */
+    color: white;
+    
+     /* Text-align permet de change l'alignement d'un texte (justifié, à droite, à gauche et centré) */
+    text-align: center;
+    
+    /* Le padding correspond à une marge interne au rectange, elle permet d'écarter le texte contenu des bords par exemple
+    Le padding interagit sur la taille de la div, si on à une div de 70px de haut et un padding-top de 30, la hauteur sera de 100.
+    Le padding peut etre global ou séléctif, en global on notera padding:10px, par exemple, ce qui donnera une marge interne de 10px sur chaque bord. Alors qu'en séléctif, avec margin-top:10px, ne donnera qu'une marge interne sur le haut de la div. Les autres valeur séléctive sont bottom, left et right*/
+    padding-top:30px;
+    
+    /* Le margin permet de mettre des marges externe au rectangle. Elle fonctionne comme un padding sans influé sur la taille de la div. Si une div d'une hauteur de 100px à un margin-top de 10px, la taille de la div ne changera pas mais l'emplacement par rapport à l'élément au dessus changera.*/
+    margin-bottom: 10px;
+    
+}
+
+
+/* On peut ajouter des styles à plusieurs élements en même temps en suivant la notation suivante, par exemple : "h1,h2,.gros" */
+h2,h4,.gros {
+    
+    color: blue;
+    
+}
+
+.gros {
+    
+    /* On peut gérer les font aussi dans le CSS avec des style comme font-weight qui permet de modifier la largeur d'une font, en bold par exemple */
+    font-weight: bold;
+    
+    /* On peut aussi y ajouter des styles différents comme italique ou normal */
+    font-style: italic;
+    
+    /* Ou encore rajouter un surlignement */
+    text-decoration: underline;
+}

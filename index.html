@@ -1,0 +1,45 @@
+<html>
+
+    <!- Contient tous ce qu'il faut "charger" avant l'affichage de la page (lien vers des feuilles de styles, script, ect..) -->
+    <head>
+        <!- Titre de la page -->
+        <title>Présentation d'une page web</title>
+        <!- Lien vers une feuille de style -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <!- Contenu de la page web -->
+    <body>
+
+        <!- Div qui contient notre page web -->
+        <!- L'id correspond au "nom" qu'on lui donne pour ensuite la modifier dans la feuille de style -->
+        <div id="contenu">    
+
+
+            <!- la balise h1 correspond à l'affichage d'un titre. -->
+            <!- Ils existent h1, h2, h3, h4, ect... qui correspond à chaque fois à un titre plus petit. -->
+            <h1>Présentation d'une page web</h1>
+            <h2>Présentation d'une page web</h2>
+            <h3>Présentation d'une page web</h3>
+            <h4>Présentation d'une page web</h4>
+
+
+            <!- La balise p correspond aux textes, on peut y ajouter du style directement dans le texte grâce à des balises span qui agissent presque comme une div. Celle-ci peu-être utiliser plusieurs fois comme dans l'exemple ci-dessous.  -->
+            <p>Une page web se compose, un peu comme un document de mise en page, avec des bloc. Ces blocs sont des <span class="gros">div</span>, ils peuvent être rempli de couleur, de textes, d'image et modifier graphiquement comme on le souhaite. Cette modification se fait grâce à la <span class="gros">feuille de style</span>.</p>
+
+
+
+            <!- Comme dans la div contenu, la div est ici colorée grâçe non plus à un id mais à une classe -->
+            <div class="rouge"> Rouge
+            </div>
+
+
+            <!- Les images ont leur propore balise img qui permet d'afficher une image avec une source, on peut influer sur la taille de l'image en y ajouter une valeur height ou width (cette valeur sera en pixels). -->
+            <img src="gif.gif"/>
+            <img src="gif.gif" height="100"/>
+            <img src="gif.gif" width="700"/>
+              
+            <!- Chaque balise doit être impérativement fermé. -->
+        </div>
+    </body>
+</html>
